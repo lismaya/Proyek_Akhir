@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard','AdminController@dashboard');
+
+Route::get('/register', function(){
+  echo "halaman register";
+});
